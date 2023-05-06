@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from '../UI/Card'
+import './Style.css'
 
 const Poke = () => {
   const [data, setData] = useState([]);
@@ -34,8 +35,10 @@ const Poke = () => {
   }
   return (
     <>
-      <input onChange={searchInputHandler} />
-      <div>
+      <div className='search'>
+        <input onChange={searchInputHandler} />
+      </div>
+      <div className='pokemon_holder'>
         {searchFilter.map((item) => (<Card
           key={item.name}
           name={item.name}

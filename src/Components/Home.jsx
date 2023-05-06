@@ -3,8 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div>
-      Home page
+    <div className='home_page'>
 
     </div>
   );

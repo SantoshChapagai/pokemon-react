@@ -3,36 +3,48 @@
   margin: 0;
 }
 
-body {
-  background-color: bisque;
+header {
+  background-color: lightgreen;
+  font-size: 20px;
 }
 
-.card {
-  height: 15rem;
-  width: 15rem;
-  background-color: white;
-  margin: 1rem;
+nav ul {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  list-style-type: none;
 }
 
-button {
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  height: 1.5rem;
-  width: 1.5rem;
+li {
+  margin: 1rem;
+  padding: 1rem;
 }
 
-img {
-  height: 8rem;
-  width: 8rem;
+.home_page {
+  background: url("https://cdn.pixabay.com/photo/2016/08/04/18/52/pokemon-go-1569794__480.jpg") no-repeat center center/cover;
+  height: calc(100vh - 20vh);
 }
 
-/* .container_card {
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: greenyellow;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  margin: 1rem 0;
+  padding: 1rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon_holder {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-} */
+}

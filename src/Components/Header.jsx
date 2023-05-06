@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Style.css';
 const Header = () => {
   return (
-    <div>
+    <header>
       <nav>
         <ul>
           <li>
@@ -14,7 +14,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 
