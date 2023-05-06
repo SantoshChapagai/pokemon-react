@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import Card from './Components/Card'
+import Main from './Components/Main';
+import './Components/Style.css'
 import './App.css';
 
 function App() {
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  console.log(data);
+
+  useEffect(() => {
+    setIsLoading(true);
+    axios.get("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0").then((response) => {
+      setData(response.data);
+      setIsLoading(false)
+    });
+
+  }, []);
+  if (isLoading) {
+    return <p>Loading...</p>
+  }
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {data.results.map((item) => (< Card
+        name={item.name}
+
+      />))}
+      <Main />
     </div>
   );
 }
