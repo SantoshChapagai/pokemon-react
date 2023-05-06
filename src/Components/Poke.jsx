@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Card from './Card'
+import Card from '../UI/Card'
 
 const Poke = () => {
   const [data, setData] = useState([]);
