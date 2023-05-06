@@ -39,6 +39,7 @@ const Poke = () => {
         {searchFilter.map((item) => (<Card
           key={item.name}
           name={item.name}
+          id={item.id}
           image={item.sprites.other.dream_world.front_default}
         />
 

@@ -1,15 +1,19 @@
 import React from 'react';
 import './Style.css';
 
-const Card = ({ id, name, img }) => {
+const Card = ({ id, name, image }) => {
 
   return (
+
     <div className='card'>
       <p>X</p>
-      {img}
+      <div>
+        <img src={image} alt={name} />
+      </div>
       <p>{id}</p>
       <p>{name}</p>
     </div>
+
   );
 };
 
