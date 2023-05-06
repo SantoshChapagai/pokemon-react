@@ -7,7 +7,6 @@ const Poke = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [searchInput, setSearchInput] = useState('');
-  console.log(data);
 
   useEffect(() => {
     setIsLoading(true);

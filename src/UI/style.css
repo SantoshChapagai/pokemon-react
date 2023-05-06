@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: bisque;
+  background-color: rgb(218, 250, 201);
 }
 
 .card {
@@ -17,14 +17,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-button {
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  height: 1.5rem;
-  width: 1.5rem;
 }
 
 img {

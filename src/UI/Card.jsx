@@ -5,16 +5,15 @@ import './style.css';
 const Card = ({ name, image }) => {
 
   return (
-    <div className='card_holder'>
-      <div className='card'>
-        <button>X</button>
-        <div>
-          <img src={image} alt={name} />
-        </div>
-        <h3>{name}</h3>
-        {/* <Link to={name}>See more</Link> */}
+
+    <div className='card'>
+      <div>
+        <img src={image} alt={name} />
       </div>
+      <h3>{name}</h3>
+      <Link to={name}>See more</Link>
     </div>
+
 
   );
 };

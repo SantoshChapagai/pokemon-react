@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home'
 import Poke from './Components/Poke'
 import Render from './Components/Render';
+import SinglePoke from './Components/SinglePoke';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' element={<Render />}>
             <Route index element={<Home />} />
             <Route path="pokedex" element={<Poke />} />
+            <Route path="pokedex/:singlepoke" element={<SinglePoke />} />
           </Route>
         </Routes>
       </BrowserRouter >

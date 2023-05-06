@@ -26,7 +26,6 @@ li {
 }
 
 footer {
-  position: fixed;
   bottom: 0;
   background-color: greenyellow;
   width: 100%;
@@ -47,4 +46,22 @@ footer {
 .pokemon_holder {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  height: 2rem;
+  width: 5rem;
+  font-size: larger;
+  background-color: lightgreen;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+}
+
+.single_poke {
+  height: calc(100vh - 20vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
