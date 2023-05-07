@@ -17,7 +17,7 @@ const SinglePoke = () => {
         setData(res.data);
         setIsLoading(false);
       });
-  }, []);
+  }, [params.singlepoke]);
 
   if (isLoading) {
     return <p>Loading...</p>;
@@ -32,6 +32,7 @@ const SinglePoke = () => {
       />
       <h3>Id: #{data.id}</h3>
       <h3>Weight: {data.weight}</h3>
+      <h3>Types: {data.types?.map(type => type.type.name).join(', ')}</h3>
       <button onClick={() => navigate(-1)}>Go back </button>
     </div>
   );
