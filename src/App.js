@@ -5,7 +5,7 @@ import Home from './Components/Home'
 import Poke from './Components/Poke'
 import Render from './Components/Render';
 import SinglePoke from './Components/SinglePoke';
-import './App.css';
+
 
 function App() {
   return (

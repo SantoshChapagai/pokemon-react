@@ -22,7 +22,7 @@ li {
 
 .home_page {
   background: url("https://cdn.pixabay.com/photo/2016/08/04/18/52/pokemon-go-1569794__480.jpg") no-repeat center center/cover;
-  height: calc(100vh - 20vh);
+  height: calc(100vh - 18vh);
 }
 
 footer {
@@ -33,6 +33,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .search {
@@ -59,7 +60,7 @@ button {
 }
 
 .single_poke {
-  height: calc(100vh - 20vh);
+  height: calc(100vh - 18vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
