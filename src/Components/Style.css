@@ -65,3 +65,8 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+p {
+  margin: 0.5rem 2rem;
+  max-width: 1000px;
+}

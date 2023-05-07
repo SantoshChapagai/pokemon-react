@@ -33,6 +33,7 @@ const SinglePoke = () => {
       <h3>Id: #{data.id}</h3>
       <h3>Weight: {data.weight}</h3>
       <h3>Types: {data.types?.map(type => type.type.name).join(', ')}</h3>
+      <p><i>Moves: {data.moves?.map(move => move.move.name).join(', ')}</i></p>
       <button onClick={() => navigate(-1)}>Go back </button>
     </div>
   );
